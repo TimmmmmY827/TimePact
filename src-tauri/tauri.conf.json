@@ -1,0 +1,80 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "TimePact",
+  "mainBinaryName": "TimePact",
+  "version": "0.1.5",
+  "identifier": "com.timepact.desktop",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "TimePact",
+        "width": 820,
+        "height": 640,
+        "minWidth": 700,
+        "minHeight": 540,
+        "center": true,
+        "decorations": false,
+        "resizable": true
+      },
+      {
+        "label": "reminder",
+        "title": "TimePact Reminder",
+        "url": "index.html#/reminder",
+        "width": 560,
+        "height": 420,
+        "minWidth": 480,
+        "minHeight": 340,
+        "center": true,
+        "resizable": true,
+        "alwaysOnTop": true,
+        "visible": false,
+        "maximizable": false,
+        "minimizable": false
+      }
+    ],
+    "security": {
+      "capabilities": ["main", "reminder"],
+      "csp": {
+        "default-src": "'self' customprotocol: asset:",
+        "connect-src": "ipc: http://ipc.localhost",
+        "img-src": "'self' asset: http://asset.localhost data: blob:",
+        "media-src": "'self' asset: http://asset.localhost data: blob:",
+        "style-src": "'self' 'unsafe-inline'"
+      }
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "publisher": "TimePact",
+    "category": "Productivity",
+    "shortDescription": "本地优先的待办与专注计时器",
+    "longDescription": "时契帮助你记录时间承诺、处理到期提醒，并统计延期、完成和专注投入。",
+    "windows": {
+      "webviewInstallMode": {
+        "type": "downloadBootstrapper",
+        "silent": true
+      },
+      "nsis": {
+        "installMode": "currentUser",
+        "installerHooks": "windows/installer-hooks.nsh",
+        "languages": ["SimpChinese", "English"],
+        "displayLanguageSelector": false
+      }
+    },
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}

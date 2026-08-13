@@ -1,0 +1,405 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-30T11:44:49.412Z",
+  "title": "Design System: TimePact",
+  "extensions": {
+    "colorMeta": {
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Cool Canvas",
+        "canonical": "#f4f6f5",
+        "tonalRamp": ["#1b211f", "#35403d", "#53615d", "#75837f", "#9ba6a2", "#c2cac7", "#e4e8e6", "#f4f6f5"]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Clean Surface",
+        "canonical": "#ffffff",
+        "tonalRamp": ["#1d211f", "#3b403e", "#5b615e", "#7d8380", "#a2a7a4", "#c9cdca", "#e8eae9", "#ffffff"]
+      },
+      "surface-subtle": {
+        "role": "neutral",
+        "displayName": "Subtle Surface",
+        "canonical": "#eef2f0",
+        "tonalRamp": ["#1b211e", "#35403b", "#536059", "#74827b", "#9aa59f", "#c0c9c4", "#e1e7e4", "#eef2f0"]
+      },
+      "surface-hover": {
+        "role": "neutral",
+        "displayName": "Hover Surface",
+        "canonical": "#e7eeeb",
+        "tonalRamp": ["#1a211e", "#334039", "#505f58", "#718078", "#96a39d", "#bbc7c1", "#dde5e1", "#e7eeeb"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Primary Ink",
+        "canonical": "#17211f",
+        "tonalRamp": ["#17211f", "#30413d", "#4d625d", "#6d847e", "#91a7a1", "#b8cbc6", "#dce7e4", "#f2f7f5"]
+      },
+      "ink-secondary": {
+        "role": "neutral",
+        "displayName": "Secondary Ink",
+        "canonical": "#5e6b68",
+        "tonalRamp": ["#17211f", "#30413d", "#4d625d", "#5e6b68", "#91a7a1", "#b8cbc6", "#dce7e4", "#f2f7f5"]
+      },
+      "ink-tertiary": {
+        "role": "neutral",
+        "displayName": "Tertiary Ink",
+        "canonical": "#65736f",
+        "tonalRamp": ["#17221f", "#30423e", "#4e635e", "#65736f", "#92a8a2", "#b9ccc6", "#dce8e4", "#f2f7f5"]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Quiet Border",
+        "canonical": "#dce3e0",
+        "tonalRamp": ["#1b211f", "#35403d", "#53615d", "#75837f", "#9aa6a1", "#bec8c4", "#dce3e0", "#f2f5f4"]
+      },
+      "border-strong": {
+        "role": "neutral",
+        "displayName": "Strong Border",
+        "canonical": "#c9d3cf",
+        "tonalRamp": ["#19211e", "#33413c", "#50615a", "#70827a", "#95a59e", "#b9c8c2", "#dce5e1", "#f1f6f4"]
+      },
+      "action": {
+        "role": "primary",
+        "displayName": "Workbench Teal",
+        "canonical": "#168a7a",
+        "tonalRamp": ["#06241f", "#0a4138", "#0e5f53", "#137d6e", "#2b9c8b", "#62bbad", "#a4d8cf", "#e5f3f0"]
+      },
+      "action-hover": {
+        "role": "primary",
+        "displayName": "Deep Workbench Teal",
+        "canonical": "#117466",
+        "tonalRamp": ["#05231f", "#083f37", "#0c5a4f", "#117466", "#319586", "#68b5a9", "#a8d5cd", "#e7f2ef"]
+      },
+      "action-soft": {
+        "role": "primary",
+        "displayName": "Mist Teal",
+        "canonical": "#dcefeb",
+        "tonalRamp": ["#0b2521", "#15443c", "#25645a", "#3e8679", "#68a89d", "#9acbc3", "#c5e2dc", "#edf8f5"]
+      },
+      "danger": {
+        "role": "secondary",
+        "displayName": "Alert Coral",
+        "canonical": "#d45545",
+        "tonalRamp": ["#35100c", "#5c1c16", "#842a21", "#ad3b31", "#d45545", "#e58276", "#f0b5ad", "#fae4e0"]
+      },
+      "danger-soft": {
+        "role": "secondary",
+        "displayName": "Soft Alert Coral",
+        "canonical": "#fce9e6",
+        "tonalRamp": ["#321411", "#572621", "#7b3b33", "#a3544b", "#c8776e", "#e4a49d", "#f3ccc7", "#fce9e6"]
+      },
+      "paused": {
+        "role": "tertiary",
+        "displayName": "Paused Sage",
+        "canonical": "#7d9488",
+        "tonalRamp": ["#18241e", "#304239", "#4b6155", "#688172", "#87a192", "#abc2b6", "#cfdfd7", "#edf5f1"]
+      },
+      "unscheduled": {
+        "role": "neutral",
+        "displayName": "Unscheduled Gray",
+        "canonical": "#c8d0cd",
+        "tonalRamp": ["#1a211f", "#34403d", "#52605c", "#72807c", "#97a29f", "#bbc5c1", "#dce2e0", "#f1f4f3"]
+      },
+      "focus-ring": {
+        "role": "primary",
+        "displayName": "Keyboard Focus Teal",
+        "canonical": "#0d7569",
+        "tonalRamp": ["#04231f", "#073f38", "#0a5b51", "#0d7569", "#2f9689", "#67b6ab", "#a7d6cf", "#e6f2ef"]
+      },
+      "on-action": {
+        "role": "neutral",
+        "displayName": "On Action White",
+        "canonical": "#ffffff",
+        "tonalRamp": ["#1d211f", "#3b403e", "#5b615e", "#7d8380", "#a2a7a4", "#c9cdca", "#e8eae9", "#ffffff"]
+      },
+      "canvas-dark": {
+        "role": "neutral",
+        "displayName": "Dark Cool Canvas",
+        "canonical": "#111715",
+        "tonalRamp": ["#111715", "#2d3834", "#4b5a55", "#6b7d77", "#8fa29c", "#b6c8c2", "#d9e5e1", "#f0f6f4"]
+      },
+      "surface-dark": {
+        "role": "neutral",
+        "displayName": "Dark Clean Surface",
+        "canonical": "#18201e",
+        "tonalRamp": ["#18201e", "#333f3b", "#505f5a", "#70817b", "#94a49f", "#bac9c4", "#dce5e2", "#f1f5f4"]
+      },
+      "surface-subtle-dark": {
+        "role": "neutral",
+        "displayName": "Dark Subtle Surface",
+        "canonical": "#202a27",
+        "tonalRamp": ["#16201d", "#303f3a", "#4d5f58", "#6d8078", "#91a39c", "#b7c8c2", "#d9e5e1", "#f0f5f3"]
+      },
+      "surface-hover-dark": {
+        "role": "neutral",
+        "displayName": "Dark Hover Surface",
+        "canonical": "#26332f",
+        "tonalRamp": ["#17211e", "#31413c", "#4e6159", "#6e8279", "#92a59d", "#b8c9c2", "#dae6e1", "#f0f6f3"]
+      },
+      "ink-dark": {
+        "role": "neutral",
+        "displayName": "Dark Primary Ink",
+        "canonical": "#edf3f1",
+        "tonalRamp": ["#18211f", "#33413d", "#51615c", "#72827c", "#97a49f", "#bdc8c4", "#dce5e2", "#edf3f1"]
+      },
+      "ink-secondary-dark": {
+        "role": "neutral",
+        "displayName": "Dark Secondary Ink",
+        "canonical": "#aab8b4",
+        "tonalRamp": ["#18211f", "#33413d", "#51615c", "#72827c", "#97a49f", "#aab8b4", "#dce5e2", "#edf3f1"]
+      },
+      "ink-tertiary-dark": {
+        "role": "neutral",
+        "displayName": "Dark Tertiary Ink",
+        "canonical": "#7f908b",
+        "tonalRamp": ["#18211f", "#33413d", "#51615c", "#72827c", "#7f908b", "#bdc8c4", "#dce5e2", "#edf3f1"]
+      },
+      "border-dark": {
+        "role": "neutral",
+        "displayName": "Dark Quiet Border",
+        "canonical": "#2c3935",
+        "tonalRamp": ["#17211e", "#2c3935", "#4e6159", "#6e8279", "#92a59d", "#b8c9c2", "#dae6e1", "#f0f6f3"]
+      },
+      "border-strong-dark": {
+        "role": "neutral",
+        "displayName": "Dark Strong Border",
+        "canonical": "#3b4b46",
+        "tonalRamp": ["#17211e", "#31413c", "#3b4b46", "#6e8279", "#92a59d", "#b8c9c2", "#dae6e1", "#f0f6f3"]
+      },
+      "action-dark": {
+        "role": "primary",
+        "displayName": "Dark Workbench Teal",
+        "canonical": "#39ad9b",
+        "tonalRamp": ["#06241f", "#0b433a", "#126257", "#1d8273", "#39ad9b", "#72c6b8", "#a9ddd4", "#e6f4f1"]
+      },
+      "action-hover-dark": {
+        "role": "primary",
+        "displayName": "Dark Hover Teal",
+        "canonical": "#56c0af",
+        "tonalRamp": ["#07251f", "#0d443b", "#176458", "#268576", "#45a896", "#56c0af", "#addfd6", "#e7f4f1"]
+      },
+      "action-soft-dark": {
+        "role": "primary",
+        "displayName": "Dark Teal Surface",
+        "canonical": "#163a34",
+        "tonalRamp": ["#09221e", "#163a34", "#285f56", "#408277", "#68a69b", "#99c9c1", "#c6e2dc", "#edf7f4"]
+      },
+      "danger-dark": {
+        "role": "secondary",
+        "displayName": "Dark Alert Coral",
+        "canonical": "#ef7567",
+        "tonalRamp": ["#35100c", "#5e1d17", "#872c23", "#b13f34", "#da594d", "#ef7567", "#f5b8b0", "#fce4e0"]
+      },
+      "danger-soft-dark": {
+        "role": "secondary",
+        "displayName": "Dark Alert Surface",
+        "canonical": "#432421",
+        "tonalRamp": ["#2d1110", "#432421", "#743c35", "#9d574e", "#c57a70", "#dfa49d", "#f0ccc7", "#fae9e6"]
+      },
+      "paused-dark": {
+        "role": "tertiary",
+        "displayName": "Dark Paused Sage",
+        "canonical": "#8da69a",
+        "tonalRamp": ["#17231e", "#2f4239", "#4a6255", "#688273", "#8da69a", "#afc4ba", "#d0e0d8", "#edf5f1"]
+      },
+      "unscheduled-dark": {
+        "role": "neutral",
+        "displayName": "Dark Unscheduled Gray",
+        "canonical": "#52605c",
+        "tonalRamp": ["#18211f", "#33413d", "#52605c", "#72817c", "#97a39f", "#bbc6c2", "#dce3e0", "#f1f4f3"]
+      },
+      "focus-ring-dark": {
+        "role": "primary",
+        "displayName": "Dark Keyboard Focus Teal",
+        "canonical": "#68cabb",
+        "tonalRamp": ["#07251f", "#0e463c", "#19665a", "#298779", "#49aa9a", "#68cabb", "#b4e2da", "#e9f6f3"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Focus Display",
+        "purpose": "The full focus timer only."
+      },
+      "headline": {
+        "displayName": "View Headline",
+        "purpose": "Primary view titles."
+      },
+      "title": {
+        "displayName": "Task Title",
+        "purpose": "Task names and compact content titles."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Descriptions and explanatory copy."
+      },
+      "label": {
+        "displayName": "Control Label",
+        "purpose": "Buttons and compact controls."
+      },
+      "metadata": {
+        "displayName": "Metadata",
+        "purpose": "Counts, tags, helper text, and secondary timestamps."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Shared easing for navigation, completion, and progress state changes."
+      },
+      {
+        "name": "state-fast",
+        "value": "160ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Color and background feedback on controls."
+      },
+      {
+        "name": "progress",
+        "value": "350ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Task and focus progress transforms."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.01ms",
+        "purpose": "Effectively removes transitions and animations when reduced motion is requested."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "task-row-compact",
+        "value": "700px"
+      },
+      {
+        "name": "stats-compact",
+        "value": "720px"
+      },
+      {
+        "name": "window-floor",
+        "value": "760px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary confirmation or start action.",
+      "html": "<button class=\"ds-btn-primary\">Add</button>",
+      "css": ".ds-btn-primary { min-height: 36px; display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 7px 12px; color: #fff; background: var(--accent, #168a7a); border: 1px solid transparent; border-radius: var(--radius-sm, 6px); font: 600 0.86rem/1 \"Segoe UI Variable Text\", \"Segoe UI\", sans-serif; cursor: pointer; transition: background-color 160ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-btn-primary:hover { background: var(--accent-hover, #117466); } .ds-btn-primary:focus-visible { outline: 2px solid var(--focus-ring, #0d7569); outline-offset: 2px; } .ds-btn-primary:active { background: var(--accent-hover, #117466); }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Quiet supporting action used throughout panels and toolbars.",
+      "html": "<button class=\"ds-btn-secondary\">Choose file</button>",
+      "css": ".ds-btn-secondary { min-height: 36px; display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 7px 12px; color: var(--text-primary, #17211f); background: var(--bg-subtle, #eef2f0); border: 1px solid transparent; border-radius: var(--radius-sm, 6px); font: 600 0.86rem/1 \"Segoe UI Variable Text\", \"Segoe UI\", sans-serif; cursor: pointer; transition: background-color 160ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-btn-secondary:hover { background: var(--bg-hover, #e7eeeb); } .ds-btn-secondary:focus-visible { outline: 2px solid var(--focus-ring, #0d7569); outline-offset: 2px; } .ds-btn-secondary:active { background: var(--bg-hover, #e7eeeb); }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Default labeled or standalone text entry.",
+      "html": "<input class=\"ds-field\" placeholder=\"Add a task…\" aria-label=\"Add a task\">",
+      "css": ".ds-field { width: 100%; min-height: 38px; padding: 8px 10px; color: var(--text-primary, #17211f); background: var(--bg-surface, #fff); border: 1px solid var(--border, #dce3e0); border-radius: var(--radius-sm, 6px); font: 400 0.9rem/1.5 \"Segoe UI Variable Text\", \"Segoe UI\", sans-serif; } .ds-field::placeholder { color: var(--text-tertiary, #65736f); } .ds-field:hover { border-color: var(--border-strong, #c9d3cf); } .ds-field:focus, .ds-field:focus-visible { border-color: var(--accent, #168a7a); outline: 2px solid color-mix(in srgb, var(--accent, #168a7a) 20%, transparent); outline-offset: 0; }"
+    },
+    {
+      "name": "Active Navigation Item",
+      "kind": "nav",
+      "refersTo": "nav-item-active",
+      "description": "Selected destination in the fixed icon-only rail.",
+      "html": "<a class=\"ds-nav-active\" href=\"#\" aria-label=\"Tasks\"><svg width=\"21\" height=\"21\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" aria-hidden=\"true\"><path d=\"M3 10.5 12 3l9 7.5\"></path><path d=\"M5 9.5V21h14V9.5\"></path><path d=\"M9 21v-7h6v7\"></path></svg></a>",
+      "css": ".ds-nav-active { position: relative; display: grid; width: 44px; height: 44px; place-items: center; color: var(--accent, #168a7a); background: var(--accent-soft, #dcefeb); border-radius: var(--radius-md, 10px); text-decoration: none; transition: color 160ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)), background-color 160ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-nav-active::before { position: absolute; left: -8px; width: 3px; height: 22px; content: \"\"; background: var(--accent, #168a7a); border-radius: 0 4px 4px 0; } .ds-nav-active:hover { color: var(--accent-hover, #117466); } .ds-nav-active:focus-visible { outline: 2px solid var(--focus-ring, #0d7569); outline-offset: 2px; }"
+    },
+    {
+      "name": "Panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Flat bordered container for grouped controls and information.",
+      "html": "<section class=\"ds-panel\"><strong>Local data</strong><span>Saved only on this computer.</span></section>",
+      "css": ".ds-panel { display: grid; gap: 4px; padding: 14px; color: var(--text-primary, #17211f); background: var(--bg-surface, #fff); border: 1px solid var(--border, #dce3e0); border-radius: var(--radius-md, 10px); font-family: \"Segoe UI Variable Text\", \"Segoe UI\", sans-serif; } .ds-panel strong { font-size: 0.84rem; } .ds-panel span { color: var(--text-secondary, #5e6b68); font-size: 0.73rem; } .ds-panel:hover { border-color: var(--border-strong, #c9d3cf); } .ds-panel:focus-within { outline: 2px solid var(--focus-ring, #0d7569); outline-offset: 2px; }"
+    },
+    {
+      "name": "Task Row",
+      "kind": "custom",
+      "refersTo": "task-row",
+      "description": "Signature compact task row with semantic progress before content.",
+      "html": "<article class=\"ds-task-row\"><div class=\"ds-task-progress\" aria-hidden=\"true\"><span></span></div><div class=\"ds-task-body\"><button class=\"ds-task-complete\" aria-label=\"Complete task\">✓</button><div class=\"ds-task-copy\"><strong>Finish project weekly report</strong><span>Deadline</span></div><time>45:00</time><button class=\"ds-task-action\" aria-label=\"Pause task\">Ⅱ</button></div></article>",
+      "css": ".ds-task-row { overflow: hidden; color: var(--text-primary, #17211f); background: var(--bg-surface, #fff); border: 1px solid var(--border, #dce3e0); border-radius: var(--radius-sm, 6px); font-family: \"Segoe UI Variable Text\", \"Segoe UI\", sans-serif; } .ds-task-progress { height: 4px; overflow: hidden; background: color-mix(in srgb, var(--accent, #168a7a) 20%, var(--bg-subtle, #eef2f0)); } .ds-task-progress span { display: block; width: 52%; height: 100%; background: var(--accent, #168a7a); border-radius: 0 4px 4px 0; transform-origin: left center; transition: transform 350ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-task-body { display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto; align-items: center; gap: 10px; min-height: 62px; padding: 9px 9px 9px 12px; } .ds-task-complete { display: grid; width: 24px; height: 24px; place-items: center; color: transparent; background: transparent; border: 1.5px solid var(--border-strong, #c9d3cf); border-radius: 50%; cursor: pointer; } .ds-task-complete:hover, .ds-task-complete:focus-visible { color: #fff; background: var(--accent, #168a7a); border-color: var(--accent, #168a7a); outline: none; } .ds-task-copy { display: grid; min-width: 0; gap: 3px; } .ds-task-copy strong { overflow: hidden; font-size: 0.91rem; font-weight: 620; text-overflow: ellipsis; white-space: nowrap; } .ds-task-copy span { color: var(--text-secondary, #5e6b68); font-size: 0.75rem; } .ds-task-body time { color: var(--accent, #168a7a); font-size: 0.81rem; font-weight: 600; font-variant-numeric: tabular-nums; } .ds-task-action { width: 34px; height: 34px; color: var(--text-secondary, #5e6b68); background: transparent; border: 0; border-radius: var(--radius-sm, 6px); cursor: pointer; } .ds-task-action:hover { color: var(--text-primary, #17211f); background: var(--bg-hover, #e7eeeb); } .ds-task-action:focus-visible { outline: 2px solid var(--focus-ring, #0d7569); outline-offset: 2px; }"
+    },
+    {
+      "name": "Focus Launcher",
+      "kind": "custom",
+      "refersTo": "button-secondary",
+      "description": "Compact home entry into the focus flow with tabular preset.",
+      "html": "<button class=\"ds-focus-launcher\"><svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"13\" r=\"8\"></circle><path d=\"M12 9v4l2.5 1.5M9 2h6\"></path></svg><span>Start focus</span><span class=\"ds-focus-preset\">25/5</span></button>",
+      "css": ".ds-focus-launcher { min-height: 36px; display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 7px 12px; color: var(--text-primary, #17211f); background: var(--bg-subtle, #eef2f0); border: 1px solid transparent; border-radius: var(--radius-sm, 6px); font: 600 0.86rem/1 \"Segoe UI Variable Text\", \"Segoe UI\", sans-serif; white-space: nowrap; cursor: pointer; transition: background-color 160ms var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-focus-preset { color: var(--accent, #168a7a); font-size: 0.78rem; font-variant-numeric: tabular-nums; } .ds-focus-launcher:hover { background: var(--bg-hover, #e7eeeb); } .ds-focus-launcher:focus-visible { outline: 2px solid var(--focus-ring, #0d7569); outline-offset: 2px; } .ds-focus-launcher:active { background: var(--accent-soft, #dcefeb); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Quiet Time Workbench",
+    "overview": "TimePact is a compact desktop productivity environment built for scanning and acting, not for admiring a dashboard. Its cool neutral canvas, narrow working column, restrained teal actions, and small semantic signals keep time commitments legible without turning urgency into visual noise.\n\nThe system feels native to Windows and deliberately ordinary in the best sense: familiar controls, light borders, concise labels, and a single strong hierarchy. A task's title and time state lead; supporting metadata and destructive actions stay quiet until needed. Light, dark, and system modes preserve the same semantic roles.",
+    "keyCharacteristics": [
+      "A fixed icon-only rail framing a narrow, centered work area.",
+      "Bordered and tonal surfaces with little decorative depth.",
+      "Teal for action and active timing; coral only for danger and overdue attention.",
+      "Progress lines placed directly above task content.",
+      "Native system typography with tabular numerals for time.",
+      "Short eased state changes that disappear under reduced-motion preferences."
+    ],
+    "rules": [
+      {
+        "name": "The Semantic Theme Rule",
+        "body": "Theme changes swap values, never meanings; canvas, surface, ink, action, danger, paused, and unscheduled retain their roles in light, dark, and system modes.",
+        "section": "colors"
+      },
+      {
+        "name": "The Exception Color Rule",
+        "body": "Teal denotes action or active time, while coral is reserved for danger, overdue attention, and destructive feedback.",
+        "section": "colors"
+      },
+      {
+        "name": "The Native Clarity Rule",
+        "body": "Use the system sans stack everywhere; hierarchy comes from size, weight, and density, not a contrasting display family.",
+        "section": "typography"
+      },
+      {
+        "name": "The Time Is Tabular Rule",
+        "body": "All countdowns, deadlines, counts, durations, and metrics use tabular numerals so values do not shift as they change.",
+        "section": "typography"
+      },
+      {
+        "name": "The Narrow Workbench Rule",
+        "body": "Keep the primary working column centered and no wider than 760px; home task lists stop at 720px.",
+        "section": "layout"
+      },
+      {
+        "name": "The Scan Before Detail Rule",
+        "body": "Preserve the order composer, focus launcher, grouped tasks; within a row, title and primary time state precede metadata and actions.",
+        "section": "layout"
+      },
+      {
+        "name": "The Bordered Surface Rule",
+        "body": "Separate working surfaces with tonal contrast and a quiet 1px border; do not add ambient shadows to routine containers.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve the 64px icon rail and narrow centered work column across desktop sizes.",
+      "Do put the semantic progress line directly above every task row.",
+      "Do use tabular numerals for all changing time and metric values.",
+      "Do keep task titles and primary time states visually dominant over metadata and row actions.",
+      "Do preserve focus-visible outlines, accessible names for icon-only controls, keyboard operation, and reduced-motion behavior.",
+      "Do maintain the same semantic token names when adding or changing theme values."
+    ],
+    "donts": [
+      "Don't turn the home surface into a dashboard of summary cards, charts, streaks, or decorative productivity chrome.",
+      "Don't add search or filter controls to the shipped home hierarchy; the current surface is an urgency-sorted working list.",
+      "Don't use coral as a general accent or teal as decoration; both colors carry state.",
+      "Don't add ambient shadows to ordinary rows and panels.",
+      "Don't introduce decorative display faces, uppercase kickers, glyph characters as icons, or hard offset shadows.",
+      "Don't promote one-off surface concepts into global components or tokens without shipped reuse."
+    ]
+  }
+}

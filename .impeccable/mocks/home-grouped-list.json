@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "name": "compact-grouped-list",
+  "asset": "home-grouped-list.png",
+  "decision": "Use the third grouped-list proposal as the composition baseline, then make it narrower and denser.",
+  "requirements": [
+    "64px icon-only rail in the default state",
+    "shorter central task list and narrower desktop window",
+    "focus launcher visible on the home screen",
+    "deadline and countdown progress shown as a colored line above each task card",
+    "quiet productivity aesthetic inspired by Microsoft To Do, Things 3, and Linear"
+  ]
+}

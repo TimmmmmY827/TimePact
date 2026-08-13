@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "TimePact Preview",
+  "identifier": "com.timepact.desktop.preview",
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "TimePact Preview",
+        "width": 820,
+        "height": 640,
+        "minWidth": 700,
+        "minHeight": 540,
+        "center": true,
+        "decorations": false,
+        "resizable": true
+      },
+      {
+        "label": "reminder",
+        "title": "TimePact Preview Reminder",
+        "url": "index.html#/reminder",
+        "width": 560,
+        "height": 420,
+        "minWidth": 480,
+        "minHeight": 340,
+        "center": true,
+        "resizable": true,
+        "alwaysOnTop": true,
+        "visible": false,
+        "maximizable": false,
+        "minimizable": false
+      }
+    ]
+  }
+}
