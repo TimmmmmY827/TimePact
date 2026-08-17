@@ -59,14 +59,24 @@ export const useAppStore = defineStore("app", () => {
       ]);
       applyTheme(settings.value.theme);
       startTicker();
-      if (runningInTauri()) {
-        const reminderWindow = getCurrentWindow().label === "reminder";
-        await listen<string[]>("timepact://task-due", async () => {
-          tasks.value = await backend.listTasks();
-          if (reminderWindow) void playSound(settings.value.sounds.taskDue);
-        });
-      }
+      // Data is ready and the ticker is running — consider the app initialized
+      // regardless of whether the task-due event listener can be registered.
       initialized.value = true;
+      // Registering the task-due listener must never fail data loading: some
+      // windows (focus-overlay-*) lack the core:event:allow-listen capability.
+      // Skip it on overlay windows and isolate failures everywhere else.
+      const label = runningInTauri() ? getCurrentWindow().label : "";
+      if (runningInTauri() && !label.startsWith("focus-overlay-")) {
+        try {
+          const reminderWindow = label === "reminder";
+          await listen<string[]>("timepact://task-due", async () => {
+            tasks.value = await backend.listTasks();
+            if (reminderWindow) void playSound(settings.value.sounds.taskDue);
+          });
+        } catch (cause) {
+          console.warn("task-due listener registration skipped", cause);
+        }
+      }
     } catch (cause) {
       console.error("TimePact initialization failed", cause);
       error.value = "无法读取本地数据，请稍后重试。";

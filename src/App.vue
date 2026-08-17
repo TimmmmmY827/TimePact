@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, onMounted } from "vue";
 import { useRoute } from "vue-router";
+import { getCurrentWindow } from "@tauri-apps/api/window";
 import {
   ChartNoAxesColumnIncreasing,
   House,
@@ -8,13 +9,21 @@ import {
   Timer,
 } from "@lucide/vue";
 import { useAppStore } from "./stores/app";
+import { runningInTauri } from "./services/backend";
 import WindowTitlebar from "./components/shell/WindowTitlebar.vue";
 
 const route = useRoute();
 const store = useAppStore();
+// focus-overlay-* windows are decorative-only (pure CSS aura, no Tauri APIs).
+// Detect by webview label — deterministic and set in Rust before the webview
+// loads — instead of window.location.hash, which races with vue-router in the
+// WebView2 production build and lets initialize() run on overlay windows.
+const focusOverlayWindow = computed(
+  () => runningInTauri() && getCurrentWindow().label.startsWith("focus-overlay-"),
+);
 const reminderOnly = computed(() => route.name === "reminder");
 const screenOverlayOnly = computed(
-  () => route.name === "focus-overlay" || window.location.hash.startsWith("#/focus-overlay"),
+  () => route.name === "focus-overlay" || focusOverlayWindow.value,
 );
 
 const primaryNavigation = [
@@ -26,7 +35,7 @@ const primaryNavigation = [
 const settingsNavigation = { to: "/settings", label: "设置" };
 
 onMounted(() => {
-  if (!window.location.hash.startsWith("#/focus-overlay")) void store.initialize();
+  if (!focusOverlayWindow.value) void store.initialize();
 });
 </script>
 
