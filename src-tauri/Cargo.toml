@@ -1,6 +1,6 @@
 [package]
 name = "timepact"
-version = "0.1.5"
+version = "0.1.6"
 description = "TimePact — local-first task and focus timer"
 authors = ["TimePact"]
 edition = "2024"
